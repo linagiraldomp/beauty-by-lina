@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty by Lina</title>
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fef1f6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #ff66b2;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid #e60073;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+            font-family: 'Verdana', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header p {
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Navegación */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            padding: 12px 20px;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #ff66b2;
+            transform: scale(1.05);
+        }
+
+        /* Contenido */
+        .content {
+            margin: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: #ff66b2;
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .content p {
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        /* Productos destacados */
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .product-list li {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product-list li:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-list li h4 {
+            color: #ff66b2;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .product-list li p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .content {
+                margin: 20px;
+            }
+
+            .product-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav {
+                padding: 10px;
+            }
+
+            nav a {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Beauty by Lina</h1>
+        <p>Consejos y productos para resaltar tu belleza</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#consejos">Consejos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <div id="inicio" class="content">
+        <h2>¡Hola! Soy Lina María Giraldo Velásquez</h2>
+        <p>
+            Bienvenida a mi espacio de belleza. Aquí te contaré todo sobre mis productos favoritos de maquillaje y cuidado de la piel.
+        </p>
+
+        <img src="img/foto.png" alt="Productos de belleza">
+
+        <p>
+            En este blog encontrarás mis recomendaciones de productos, consejos sobre cuidados de la piel, y las últimas tendencias de maquillaje.
+        </p>
+
+        <h3>Mis Productos Favoritos</h3>
+        <ul class="product-list">
+            <li>
+                <img src="img/base_maquillaje.jpg" alt="Base de Maquillaje">
+                <h4>Base de Maquillaje</h4>
+                <p>Deja la piel luminosa y radiante. Ideal para todo tipo de piel.</p>
+            </li>
+            <li>
+                <img src="img/crema_hidratante.jpg" alt="Crema Hidratante">
+                <h4>Crema Hidratante</h4>
+                <p>Con factor de protección solar, perfecta para el día a día.</p>
+            </li>
+            <li>
+                <img src="img/paleta_sombras.jpg" alt="Paleta de Sombras">
+                <h4>Paleta de Sombras</h4>
+                <p>Tonos neutros para un maquillaje natural y elegante.</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Sección Sobre mí -->
+    <div id="sobre-mi" class="content">
+        <h2>Sobre mí</h2>
+        <p>¡Hola! Soy Lina María Giraldo Velásquez 💄✨</p>
+        <p>
+            Soy una apasionada del mundo de la belleza y todo lo que tiene que ver con el cuidado personal. Me encanta aprender, probar y compartir información sobre cuidado de la piel, maquillaje, productos de belleza y tips que nos ayuden a resaltar nuestra belleza natural. Para mí, la belleza no solo se trata de verse bien, sino también de sentirse segura, cuidar la piel y dedicar tiempo a uno mismo.
+        </p>
+        <p>
+            En este blog encontrarás contenido de Beauty by Lina, un espacio creado con mucho cariño donde compartiré consejos de skincare, rutinas de cuidado facial, recomendaciones de productos, tips de maquillaje, tendencias de belleza y experiencias personales dentro de este maravilloso mundo.
+        </p>
+        <p>
+            Mi objetivo es que este blog sea un lugar donde puedas aprender, inspirarte y descubrir nuevas formas de cuidar tu piel y realzar tu belleza, sin importar tu estilo o nivel de experiencia con el maquillaje.
+        </p>
+        <p>
+            Si te apasiona la belleza tanto como a mí, este espacio es para ti. 💖
+        </p>
+    </div>
+
+    <!-- Sección Consejos -->
+<div id="consejos" class="content">
+    <h2>Consejos de maquillaje para resaltar tu belleza natural – Beauty by Lina</h2>
+
+    <p>Este invierno, la piel necesita más que nunca tus cuidados para maquillarte bien. Aquí te dejamos unos consejos esenciales:</p>
+
+    <p>El maquillaje es una de las mejores herramientas para resaltar nuestra belleza y expresar nuestra personalidad, y en el día a día nos permite enfrentar diferentes estilos, ocasiones y tendencias. 💄✨</p>
+
+    <p>El maquillaje es una herramienta maravillosa para expresar nuestra personalidad, resaltar nuestros rasgos y sentirnos más seguras. Sin embargo, más allá de seguir tendencias, lo más importante es aprender a usarlo de una forma que favorezca nuestro rostro y nos haga sentir cómodas.</p>
+
+    <p>Uno de los pasos más importantes antes de maquillarte es preparar bien la piel. Una piel limpia e hidratada permite que el maquillaje se vea mucho más natural y dure por más tiempo. Utilizar una crema hidratante adecuada para tu tipo de piel y, si es posible, un primer, ayudará a que la base se aplique de manera uniforme.</p>
+
+    <p>Otro consejo clave es elegir la base correcta. Es importante que el tono de la base sea lo más parecido posible a tu tono natural de piel para evitar diferencias entre el rostro y el cuello.</p>
+
+    <p>Los correctores también son grandes aliados del maquillaje. Pueden ayudarte a cubrir ojeras, pequeñas imperfecciones o zonas que necesiten un poco más de iluminación.</p>
+
+    <p>En cuanto a los ojos, no siempre es necesario utilizar muchos productos. A veces, una buena máscara de pestañas y un delineado suave pueden hacer una gran diferencia.</p>
+
+    <p>Las cejas también juegan un papel muy importante en el maquillaje, ya que enmarcan el rostro.</p>
+
+    <p>Finalmente, no olvides los labios. Puedes optar por tonos naturales para un look diario o colores más intensos cuando quieras un maquillaje más llamativo.</p>
+
+    <p>Recuerda que el maquillaje no tiene reglas estrictas. Lo más importante es divertirte, experimentar y encontrar los estilos que mejor te hagan sentir.</p>
+</div>
+        <!-- Sección Contacto -->
+    <div id="contacto" class="content">
+        <h2>Contacto</h2>
+        <p>¡Me encantaría saber de ti! Aquí está mi información de contacto:</p>
+        <ul>
+            <li><strong>Nombre:</strong> Lina María Giraldo Velásquez</li>
+            <li><strong>Correo:</strong> lina.belleza@email.com</li>
+            <li><strong>Teléfono:</strong> +34 612 345 678 </li>
+            <li><strong>Redes Sociales:</strong> @beautybylina</li>
+        </ul>
+        <p>Si tienes alguna pregunta o necesitas más información, ¡no dudes en contactarme!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Beauty by Lina | Blog de Belleza</p>
+    </footer>
+
+</body>
+
+</html>
